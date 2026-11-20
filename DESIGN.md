@@ -136,7 +136,7 @@ The scaffold pins Python 3.14. The library that runs the model (`onnxruntime`) h
 
 ## 3. Assumptions
 
-Where the brief left something open, this is what I decided. Each is easy to change in [similarco/events.py](similarco/events.py).
+Where the brief left something open, this is what I decided. Each is a small change in the code: mostly [similarco/events.py](similarco/events.py) and [similarco/merge.py](similarco/merge.py), and number 6 in [similarco/embedding.py](similarco/embedding.py).
 
 1. **A time with no timezone is Malaysia time (+08:00).** Every other time in the feed is, and the untagged ones follow the same daily sequence.
 2. **A missing or unreadable time means "oldest possible".** The company is kept but never overrides anything that has a time.
